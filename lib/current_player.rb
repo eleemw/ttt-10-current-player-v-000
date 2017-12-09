@@ -21,5 +21,5 @@ def current_player(board)
 end
 
 # refactored original #turn_count (lines 16 - 22) using ternary operator
-#def current_player(board) turn_count(board).even? ? "X" #: "O"
+#def current_player(board) turn_count(board) % 2 ? "X" #: "O"
 #end
