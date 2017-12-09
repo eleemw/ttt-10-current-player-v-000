@@ -12,15 +12,6 @@ def turn_count(board)
 end
 # => return number of turns that have been played
 
-  # use #turn_count to determine if it is "X"'s or "O"'s turn
-#def current_player(board)
-#  if turn_count(board).even?
-#    "X"
-#  else
-#    "O"
-#  end
-#end
-
 def current_player(board)
   if turn_count(board) % 2 == 0 
     "X"
