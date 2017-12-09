@@ -12,14 +12,14 @@ def turn_count(board)
 end
 # => return number of turns that have been played
 
-def current_player(board)
-  if turn_count(board) % 2 == 0 
-    "X"
-  else
-    "O"
-  end
-end
-
-# refactored original #turn_count (lines 16 - 22) using ternary operator
-#def current_player(board) turn_count(board) % 2 ? "X" #: "O"
+#def current_player(board)
+#  if turn_count(board) % 2 == 0 
+#    "X"
+#  else
+#    "O"
+#  end
 #end
+
+# refactored original #turn_count (lines 15 - 22) using ternary operator
+def current_player(board) turn_count(board) % 2 ? "X" : "O"
+end
